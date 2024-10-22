@@ -22,7 +22,7 @@ import AdSession from './addSession';
 // dotenv.config();
 
 
-const VOTEaddress ="0x5FbDB2315678afecb367f032d93F642f64180aa3";
+ const VOTEaddress ="0xb2f27D934738844a5F8D6B6a251A1Edb6D8f2bF6";
 
 function App() {
   const [account, setAccount] = useState(null);
@@ -59,7 +59,7 @@ function App() {
               <Route path="/vote" element={<Voting vote={vote} setVote={setVote}/>} />
               <Route path="/vote/:id" element={<Vote vote={vote}/>} />
               <Route path="/admin" element={<Admin vote={vote}/>}/>
-              <Route path="/history" element={<History vote={vote}/>}/>
+              <Route path="/history" element={<History vote={vote} VOTEaddress={VOTEaddress}/>}/>
               <Route path="/admin/updateSession" element={<EditSession/>}/>
               <Route path="/admin/updateProject" element={<EditProject/>}/>
               <Route path="/members" element={<MemberList vote={vote}/>}/>

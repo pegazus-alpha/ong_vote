@@ -2,7 +2,7 @@ import "./bootstrap-5.0.2-dist/css/bootstrap.min.css";
 import { useEffect, useState } from 'react';
 import { ethers } from "ethers";
 
-const History = ({ vote }) => {
+const History = ({ vote,VOTEaddress }) => {
     const [sessions, setSessions] = useState([]);
     const [error, setError] = useState('');
 
@@ -69,12 +69,12 @@ const History = ({ vote }) => {
 
     // Utiliser un intervalle pour mettre à jour l'état des sessions
     useEffect(() => {
-        const intervalId = setInterval(() => {
+        // const intervalId = setInterval(() => {
             updateState(); // Mise à jour de l'état de la session
             loadHistory(); // Recharger l'historique après la mise à jour
-        }, 2000); // Appeler toutes les 2 secondes
+        // }); // Appeler toutes les 2 secondes
 
-        return () => clearInterval(intervalId); // Nettoyage à la fin
+        // return () => clearInterval(intervalId); // Nettoyage à la fin
     }, []);
 
     return (

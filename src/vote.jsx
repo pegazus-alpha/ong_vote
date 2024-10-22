@@ -14,7 +14,7 @@ const Vote = ({vote})=>{
             const signer = provider.getSigner();
 
             // Adresse du contrat et ABI
-            const contractAddress = '0x5FbDB2315678afecb367f032d93F642f64180aa3';
+            const contractAddress = '0xb2f27D934738844a5F8D6B6a251A1Edb6D8f2bF6';
             
             
             // Créer une instance du contrat

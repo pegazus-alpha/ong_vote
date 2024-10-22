@@ -1,3 +1,11 @@
+/*
+ * @Author: pegazus-alpha pourdebutantp@gmail.com
+ * @Date: 2024-08-10 07:27:44
+ * @LastEditors: pegazus-alpha pourdebutantp@gmail.com
+ * @LastEditTime: 2024-09-04 10:28:34
+ * @FilePath: \voteOng\src\voting.jsx
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 
 
 import { useState, useEffect } from 'react';
@@ -13,7 +21,7 @@ const Voting = ({ vote, setVote }) => {
     const [projects, setProjects] = useState([]);
     // const [total,setTotal]=useState(0);
     const navigate = useNavigate();
-    const VOTEaddress = '0x5FbDB2315678afecb367f032d93F642f64180aa3'; // Assurez-vous que cette adresse est correcte
+    const VOTEaddress = '0xb2f27D934738844a5F8D6B6a251A1Edb6D8f2bF6'; // Assurez-vous que cette adresse est correcte
     // "0x5FbDB2315678afecb367f032d93F642f64180aa3"
     const getSession = async () => {
         try {

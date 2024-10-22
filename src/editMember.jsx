@@ -4,7 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import VOTE from './artifacts/contracts/Vote.sol/Vote.json';
 import "./bootstrap-5.0.2-dist/css/bootstrap.min.css";
 
-const VOTEaddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+const VOTEaddress = "0xb2f27D934738844a5F8D6B6a251A1Edb6D8f2bF6";
 
 const EditMember = () => {
     const { memberAddress } = useParams();
